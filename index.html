@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Audio Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 80px;
+      background: #f5f5f5;
+    }
+
+    .box {
+      background: white;
+      padding: 30px;
+      display: inline-block;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    input {
+      margin-top: 20px;
+    }
+
+    audio {
+      margin-top: 20px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h2>🎧 Audio Demo Website</h2>
+    <p>Upload an audio file to play it instantly</p>
+
+    <input type="file" id="audioInput" accept="audio/*" />
+
+    <audio id="player" controls></audio>
+  </div>
+
+  <script>
+    const input = document.getElementById("audioInput");
+    const player = document.getElementById("player");
+
+    input.addEventListener("change", function () {
+      const file = this.files[0];
+      if (file) {
+        const url = URL.createObjectURL(file);
+        player.src = url;
+        player.play();
+      }
+    });
+  </script>
+</body>
+</html>
