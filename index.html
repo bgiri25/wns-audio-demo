@@ -66,7 +66,7 @@
 <div class="section">
 
   <div class="section-title">
-    Section 1: WNS model trained on DNS dataset
+    Section 1: WNS model trained on DNS dataset using dynamic microphone
   </div>
 
   <div class="section-description">
@@ -156,7 +156,7 @@
 <div class="section">
 
   <div class="section-title">
-    Section 1: WNS model trained on DNS dataset using shortgun
+    Section 2: WNS model trained on DNS dataset using shortgun microphone
   </div>
 
   <div class="section-description">
@@ -199,19 +199,19 @@
 
       <td>
         <audio controls>
-          <source src="ak/middle/middle_clean_dynamic_50.wav"audio/wav">
+          <source src="clean-shortgun/middle_clean_shotgun_50.wav" type="audio/wav">
         </audio>
       </td>
 
       <td>
         <audio controls>
-          <source src="ak/middle/middle_noisy_dynamic_50.wav" type="audio/wav">
+          <source src="noisy-shortgun/middle_noisy_shotgun_50.wav" type="audio/wav">
         </audio>
       </td>
 
       <td>
         <audio controls>
-          <source src="ak/middle/middle_enhanced_dynamic_50.wav"audio/wav">
+          <source src="ak/middle/middle_enhanced_shotgun_50.wav" type="audio/wav">
         </audio>
       </td>
     </tr>
@@ -221,19 +221,19 @@
 
       <td>
         <audio controls>
-          <source src="ak/low/low_clean_dynamic_50.wav" type="audio/wav">
+          <source src="clean-shortgun/low_clean_shotgun_50.wav" type="audio/wav">
         </audio>
       </td>
 
       <td>
         <audio controls>
-          <source src="ak/low/low_noisy_dynamic_50.wav" type="audio/wav">
+          <source src="noisy-shortgun/low_noisy_shotgun_50.wav" type="audio/wav">
         </audio>
       </td>
 
       <td>
         <audio controls>
-          <source src="ak/low/low_enhanced_dynamic_50.wav" type="audio/wav">
+          <source src="ak/low/low_enhanced_shotgun_50.wav" type="audio/wav">
         </audio>
       </td>
     </tr>
@@ -242,11 +242,11 @@
 
 </div>
 
-<!-- ================= SECTION 2 ================= -->
+<!-- ================= SECTION 3 ================= -->
 <div class="section">
 
   <div class="section-title">
-   Section 2: WNS model trained on our dataset
+   Section 3: WNS model trained on our dataset using clean microphone
   </div>
 
   <div class="section-description">
@@ -332,8 +332,97 @@
 
 </div>
 
-<!-- ================= SECTION 3 ================= -->
 <div class="section">
+
+  <div class="section-title">
+   Section 4: WNS model trained on our dataset using shortgun microphone
+  </div>
+
+  <div class="section-description">
+    Model perfomance for high,mid and low wind gusts
+  </div>
+
+  <table>
+
+    <tr>
+      <th>Wind Strength</th>
+      <th>Clean</th>
+      <th>Noisy</th>
+      <th>Enhanced</th>
+    </tr>
+
+    <tr>
+      <td><strong>High</strong></td>
+
+      <td>
+        <audio controls>
+          <source src="clean-shortgun/high_clean_shotgun_50.wav" type = "audio/wav">
+        </audio>
+      </td>
+
+      <td>
+        <audio controls>
+          <source src="noisy-shortgun/high_noisy_shotgun_50.wav" type="audio/wav">
+        </audio>
+      </td>
+
+      <td>
+        <audio controls>
+          <source src="zahid/high/high_enhanced_shotgun_50.wav" type="audio/wav">
+        </audio>
+      </td>
+    </tr>
+
+    <tr>
+      <td><strong>Middle</strong></td>
+
+      <td>
+        <audio controls>
+          <source src="clean-shortgun/middle_clean_shotgun_50.wav" type="audio/wav">
+        </audio>
+      </td>
+
+      <td>
+        <audio controls>
+          <source src="noisy-shortgun/middle_noisy_shotgun_50.wav" type="audio/wav">
+        </audio>
+      </td>
+
+      <td>
+        <audio controls>
+          <source src="zahid/middle/middle_enhanced_shotgun_50.wav" type="audio/wav">
+        </audio>
+      </td>
+    </tr>
+
+    <tr>
+      <td><strong>Low</strong></td>
+
+      <td>
+        <audio controls>
+          <source src="clean-shortgun/low_clean_shotgun_50.wav" type="audio/wav">
+        </audio>
+      </td>
+
+      <td>
+        <audio controls>
+          <source src="noisy-shortgun/low_noisy_shotgun_50.wav" type="audio/wav">
+        </audio>
+      </td>
+
+      <td>
+        <audio controls>
+          <source src="zahid/low/low_enhanced_shotgun_50.wav" type="audio/wav">
+        </audio>
+      </td>
+    </tr>
+
+  </table>
+
+</div>
+
+<!-- ================= SECTION 3 ================= -->
+<!-- <div class="section">
 
   <div class="section-title">
     Section 3: WNS model trained on our dataset but using overlapped segments
@@ -421,7 +510,7 @@
 
   </table>
 
-</div>
+</div> -->
 
 </body>
 </html>
